@@ -1,0 +1,84 @@
+2026-05-27T12:23:01.397Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:06.349Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:12.795Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:18.569Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:24.354Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:30.181Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:36.100Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:36.126Z [preview] spawning vite on port 8002
+2026-05-27T12:23:36.132Z [install] start (queued)
+2026-05-27T12:23:36.132Z [install] start
+2026-05-27T12:23:36.443Z [preview] static fallback on port 8002 while install runs
+2026-05-27T12:23:36.443Z [preview] waiting for dependency install (this slug only)
+2026-05-27T12:23:43.061Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:48.702Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:54.513Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:23:59.823Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:05.615Z [install:npm install --include=dev --no-audit --no-fund --loglevel error]
+
+added 152 packages in 29s
+2026-05-27T12:24:06.343Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:12.348Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:13.276Z [install:npm install --no-save --include=dev --no-audit --no-fund --loglevel error @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl]
+
+added 170 packages in 7s
+2026-05-27T12:24:13.276Z [install:npm install --no-save @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl]
+npm install --no-save @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl ok
+
+2026-05-27T12:24:13.277Z [install:native-bindings-repair]
+Native bindings still missing; removing node_modules + package-lock.json and reinstalling with optional deps
+
+2026-05-27T12:24:18.987Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:24.464Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:31.379Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:35.781Z [install:npm install --include=dev --no-audit --no-fund --loglevel error:attempt-1]
+npm error code ENOENT
+npm error syscall stat
+npm error path /app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be
+npm error errno -2
+npm error enoent ENOENT: no such file or directory, stat '/app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /app/.npm-cache/_logs/2026-05-27T12_24_14_246Z-debug-0.log
+2026-05-27T12:24:35.782Z [install:native-bindings]
+npm install --include=dev --no-audit --no-fund --loglevel error failed (exit 254).
+npm error code ENOENT
+npm error syscall stat
+npm error path /app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be
+npm error errno -2
+npm error enoent ENOENT: no such file or directory, stat '/app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /app/.npm-cache/_logs/2026-05-27T12_24_14_246Z-debug-0.log
+
+2026-05-27T12:24:35.783Z [install] failed: npm install --include=dev --no-audit --no-fund --loglevel error failed (exit 254).
+npm error code ENOENT
+npm error syscall stat
+npm error path /app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be
+npm error errno -2
+npm error enoent ENOENT: no such file or directory, stat '/app/.npm-cache/_cacache/content-v2/sha512/ae/45/6adc85e1fb814319c87e2b0cd7dda57d5b790ee781b2120a6f0734b272d0c0e97b5ded1250575c665db790a79bfbf95ccb39f56a8aeb5213a1880a03c5be'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: /app/.npm-cache/_logs/2026-05-27T12_24_14_246Z-debug-0.log
+2026-05-27T12:24:35.785Z [preview] failed (install): npm install failed. See preview.log in the project folder for details.. Re-open the client link to retry after fixing the project.
+2026-05-27T12:24:36.550Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:42.263Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:48.090Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:53.877Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:24:59.630Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:05.451Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:11.027Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:16.676Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:22.508Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:28.276Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:34.038Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:39.893Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:45.702Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:51.550Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:25:57.329Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:03.113Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:08.959Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:14.824Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:20.537Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:26.297Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:26:32.124Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
