@@ -29,3 +29,10 @@ coverage
 
 # Platform
 .platform
+
+# Launchpad preview runtime (do not commit)
+ecosystem.preview.cjs
+ecosystem.preview.js
+preview.log
+.preview-package.sha256
+.platform/pm2/

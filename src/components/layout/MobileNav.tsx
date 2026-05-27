@@ -1,7 +1,9 @@
-import { CheckSquare, LayoutDashboard, Menu, Settings, X } from 'lucide-react'
+import { CheckSquare, LayoutDashboard, LogOut, Menu, Settings, X } from 'lucide-react'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useAuth } from '../../hooks/useAuth'
 import { cn } from '../../lib/utils'
+import { Button } from '../ui/Button'
 
 const navItems = [
   { to: '/app', label: 'Dashboard', icon: LayoutDashboard, end: true },
@@ -11,6 +13,14 @@ const navItems = [
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
+  const navigate = useNavigate()
+  const { user, signOut } = useAuth()
+
+  function handleLogout() {
+    signOut()
+    setOpen(false)
+    navigate('/', { replace: true })
+  }
 
   return (
     <>
@@ -38,7 +48,7 @@ export function MobileNav() {
             onClick={() => setOpen(false)}
             aria-hidden
           />
-          <div className="absolute inset-y-0 left-0 w-72 bg-surface-elevated shadow-xl">
+          <div className="absolute inset-y-0 left-0 flex w-72 flex-col bg-surface-elevated shadow-xl">
             <div className="flex items-center justify-between border-b border-border px-4 py-4">
               <span className="font-display text-lg text-ink">Clearboard</span>
               <button
@@ -50,7 +60,7 @@ export function MobileNav() {
                 <X className="h-5 w-5" />
               </button>
             </div>
-            <nav className="space-y-1 px-3 py-4" aria-label="Mobile navigation">
+            <nav className="flex-1 space-y-1 px-3 py-4" aria-label="Mobile navigation">
               {navItems.map(({ to, label, icon: Icon, end }) => (
                 <NavLink
                   key={to}
@@ -71,6 +81,21 @@ export function MobileNav() {
                 </NavLink>
               ))}
             </nav>
+            <div className="border-t border-border px-4 py-4">
+              {user && (
+                <p className="mb-3 truncate text-sm text-ink-muted">{user.email}</p>
+              )}
+              <Button
+                type="button"
+                variant="ghost"
+                size="sm"
+                className="w-full justify-start px-2"
+                onClick={handleLogout}
+              >
+                <LogOut className="h-4 w-4" />
+                Log out
+              </Button>
+            </div>
           </div>
         </div>
       )}

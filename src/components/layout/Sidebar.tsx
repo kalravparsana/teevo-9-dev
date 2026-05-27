@@ -1,6 +1,8 @@
-import { CheckSquare, LayoutDashboard, Settings } from 'lucide-react'
-import { NavLink } from 'react-router-dom'
+import { CheckSquare, LayoutDashboard, LogOut, Settings } from 'lucide-react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useAuth } from '../../hooks/useAuth'
 import { cn } from '../../lib/utils'
+import { Button } from '../ui/Button'
 
 const navItems = [
   { to: '/app', label: 'Dashboard', icon: LayoutDashboard, end: true },
@@ -8,7 +10,19 @@ const navItems = [
   { to: '/app/settings', label: 'Settings', icon: Settings },
 ]
 
+function getInitials(firstName: string, lastName: string) {
+  return `${firstName.charAt(0)}${lastName.charAt(0)}`.toUpperCase()
+}
+
 export function Sidebar() {
+  const navigate = useNavigate()
+  const { user, signOut } = useAuth()
+
+  function handleLogout() {
+    signOut()
+    navigate('/', { replace: true })
+  }
+
   return (
     <aside className="flex h-full w-64 shrink-0 flex-col border-r border-border bg-surface-elevated">
       <div className="flex items-center gap-2.5 border-b border-border px-5 py-5">
@@ -45,13 +59,27 @@ export function Sidebar() {
             className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-200 text-sm font-semibold text-stone-600"
             aria-hidden
           >
-            AR
+            {user ? getInitials(user.firstName, user.lastName) : '??'}
           </div>
-          <div className="min-w-0">
-            <p className="truncate text-sm font-medium text-ink">Alex Rivera</p>
-            <p className="truncate text-xs text-ink-muted">alex@company.com</p>
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-sm font-medium text-ink">
+              {user ? `${user.firstName} ${user.lastName}` : 'Guest'}
+            </p>
+            <p className="truncate text-xs text-ink-muted">
+              {user?.email ?? 'Not signed in'}
+            </p>
           </div>
         </div>
+        <Button
+          type="button"
+          variant="ghost"
+          size="sm"
+          className="mt-3 w-full justify-start px-2"
+          onClick={handleLogout}
+        >
+          <LogOut className="h-4 w-4" />
+          Log out
+        </Button>
       </div>
     </aside>
   )

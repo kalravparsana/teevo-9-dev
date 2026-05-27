@@ -85,3 +85,54 @@ npm error A complete log of this run can be found in: /app/.npm-cache/_logs/2026
 2026-05-27T12:26:37.893Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
 2026-05-27T12:26:43.660Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
 2026-05-27T12:26:52.098Z [preview] workspace ready on port 8002; dev server starts when client opens preview link
+2026-05-27T12:30:48.251Z [preview] spawning vite on port 8002
+2026-05-27T12:30:48.279Z [preview] dependency install running in background for this slug
+2026-05-27T12:30:48.732Z [install] removed uploaded node_modules (reinstalling for Linux container)
+2026-05-27T12:30:48.732Z [install] start (queued)
+2026-05-27T12:30:48.732Z [install] start
+2026-05-27T12:30:50: 
+2026-05-27T12:30:50: > clearboard@1.0.0 dev
+2026-05-27T12:30:50: > vite --host 0.0.0.0 --port 8002 --strictPort --no-open
+2026-05-27T12:30:50: 
+2026-05-27T12:30:50: sh: vite: not found
+2026-05-27T12:30:50.333Z [preview] failed (pm2_start): Vite is not installed yet. Re-open the client link in a few seconds, or wait for dependency install to finish.. Re-open the client link to retry after fixing the project.
+2026-05-27T12:30:55.048Z [install:npm ci --include=dev --no-audit --no-fund --loglevel error]
+
+added 177 packages in 6s
+2026-05-27T12:30:57.303Z [install:npm install --no-save --include=dev --no-audit --no-fund --loglevel error @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl]
+
+added 2 packages, and changed 1 package in 2s
+2026-05-27T12:30:57.303Z [install:npm install --no-save @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl]
+npm install --no-save @rolldown/binding-linux-arm64-musl @rollup/rollup-linux-arm64-musl lightningcss-linux-arm64-musl @tailwindcss/oxide-linux-arm64-musl ok
+
+2026-05-27T12:30:57.313Z [install] done
+2026-05-27T12:30:58.996Z [preview] spawning vite on port 8002
+2026-05-27T12:30:59.217Z [preview] using direct vite binary on port 8002 (predev hooks run separately)
+2026-05-27T12:31:00.887Z [preview] started via pm2 on port 8002 (process preview-york-ie-test-project)
+2026-05-27T12:31:00.888Z [preview] logs: /app/projects/york-ie-test-project/preview.log
+2026-05-27T12:31:00.888Z [preview] pm2 CLI: cd backend && npm run pm2:logs -- preview-york-ie-test-project
+2026-05-27T12:31:01: 
+  VITE v8.0.14  ready in 779 ms
+
+2026-05-27T12:31:01:   ➜  Local:   http://localhost:8002/
+2026-05-27T12:31:01:   ➜  Network: http://172.18.0.4:8002/
+2026-05-27T12:34:16.400Z [preview] spawning vite on port 8002
+2026-05-27T12:34:16.679Z [preview] using direct vite binary on port 8002 (predev hooks run separately)
+2026-05-27T12:34:18.318Z [preview] started via pm2 on port 8002 (process preview-york-ie-test-project)
+2026-05-27T12:34:18.318Z [preview] logs: /app/projects/york-ie-test-project/preview.log
+2026-05-27T12:34:18.318Z [preview] pm2 CLI: cd backend && npm run pm2:logs -- preview-york-ie-test-project
+2026-05-27T12:34:18: 
+  VITE v8.0.14  ready in 761 ms
+
+2026-05-27T12:34:18:   ➜  Local:   http://localhost:8002/
+2026-05-27T12:34:18:   ➜  Network: http://172.18.0.4:8002/
+2026-05-27T12:35:12.142Z [preview] spawning vite on port 8002
+2026-05-27T12:35:12.414Z [preview] using direct vite binary on port 8002 (predev hooks run separately)
+2026-05-27T12:35:13.795Z [preview] started via pm2 on port 8002 (process preview-york-ie-test-project)
+2026-05-27T12:35:13.795Z [preview] logs: /app/projects/york-ie-test-project/preview.log
+2026-05-27T12:35:13.795Z [preview] pm2 CLI: cd backend && npm run pm2:logs -- preview-york-ie-test-project
+2026-05-27T12:35:14: 
+  VITE v8.0.14  ready in 734 ms
+
+2026-05-27T12:35:14:   ➜  Local:   http://localhost:8002/
+2026-05-27T12:35:14:   ➜  Network: http://172.18.0.4:8002/

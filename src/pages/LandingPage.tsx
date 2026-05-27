@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, ListTodo, Zap } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import { Button } from '../components/ui/Button'
+import { useAuth } from '../hooks/useAuth'
 
 const features = [
   {
@@ -24,6 +25,12 @@ const features = [
 ]
 
 export function LandingPage() {
+  const { isAuthenticated } = useAuth()
+
+  if (isAuthenticated) {
+    return <Navigate to="/app" replace />
+  }
+
   return (
     <div className="min-h-screen">
       <header className="border-b border-border/60 bg-surface/80 backdrop-blur-sm">
@@ -35,10 +42,10 @@ export function LandingPage() {
             <span className="font-display text-xl text-ink">Clearboard</span>
           </div>
           <div className="flex items-center gap-3">
-            <Link to="/app">
+            <Link to="/sign-in">
               <Button variant="ghost">Sign in</Button>
             </Link>
-            <Link to="/app">
+            <Link to="/sign-in">
               <Button>
                 Get started
                 <ArrowRight className="h-4 w-4" />
@@ -61,13 +68,13 @@ export function LandingPage() {
           workspace designed for modern teams.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link to="/app">
+          <Link to="/sign-in">
             <Button size="lg">
               Open your workspace
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
-          <Link to="/app/tasks">
+          <Link to="/sign-in">
             <Button variant="secondary" size="lg">
               View tasks
             </Button>
@@ -102,7 +109,7 @@ export function LandingPage() {
           Join thousands of professionals who rely on Clearboard to stay organized
           and productive.
         </p>
-        <Link to="/app" className="mt-8 inline-block">
+        <Link to="/sign-in" className="mt-8 inline-block">
           <Button size="lg">Start for free</Button>
         </Link>
       </section>
