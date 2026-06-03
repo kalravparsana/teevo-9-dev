@@ -1,5 +1,16 @@
 @import 'tailwindcss';
 
+/* launchpad-tailwind-test-exclude — do not remove (embed HMR) */
+@source not "../**/*.test.ts";
+@source not "../**/*.test.tsx";
+@source not "../**/*.test.js";
+@source not "../**/*.test.jsx";
+@source not "../**/*.spec.ts";
+@source not "../**/*.spec.tsx";
+@source not "../**/*.spec.js";
+@source not "../**/*.spec.jsx";
+@source not "../**/__tests__/**";
+@source not "../**/__mocks__/**";
 @theme {
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Instrument Serif', Georgia, serif;

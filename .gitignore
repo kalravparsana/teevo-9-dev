@@ -36,3 +36,7 @@ ecosystem.preview.js
 preview.log
 .preview-package.sha256
 .platform/pm2/
+.platform/
+node_modules/
+dist/
+build/

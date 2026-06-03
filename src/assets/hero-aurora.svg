@@ -1,0 +1,24 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="aurora-a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 220) rotate(90) scale(320)">
+      <stop stop-color="#0F766E" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#14B8A6" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FAFAF9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 420) rotate(90) scale(280)">
+      <stop stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="0.6" stop-color="#A78BFA" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FAFAF9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aurora-c" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 620) rotate(90) scale(240)">
+      <stop stop-color="#0284C7" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FAFAF9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur-heavy" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+  </defs>
+  <circle cx="280" cy="220" r="280" fill="url(#aurora-a)" filter="url(#blur-heavy)"/>
+  <circle cx="560" cy="420" r="240" fill="url(#aurora-b)" filter="url(#blur-heavy)"/>
+  <circle cx="420" cy="620" r="200" fill="url(#aurora-c)" filter="url(#blur-heavy)"/>
+</svg>

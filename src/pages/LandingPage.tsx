@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle2, ListTodo, Zap } from 'lucide-react'
 import { Link, Navigate } from 'react-router-dom'
+import { LandingHero } from '../components/landing/LandingHero'
 import { Button } from '../components/ui/Button'
 import { useAuth } from '../hooks/useAuth'
 
@@ -55,32 +56,7 @@ export function LandingPage() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24 pt-20 text-center md:pt-28">
-        <p className="text-sm font-medium uppercase tracking-widest text-primary">
-          Task management, simplified
-        </p>
-        <h1 className="mx-auto mt-4 max-w-3xl font-display text-5xl leading-tight text-ink md:text-6xl">
-          Focus on what matters.{' '}
-          <span className="italic text-primary">Let the rest wait.</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-ink-muted">
-          Manage your tasks, priorities, and deadlines in one calm, distraction-free
-          workspace designed for modern teams.
-        </p>
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Link to="/sign-in">
-            <Button size="lg">
-              Open your workspace
-              <ArrowRight className="h-4 w-4" />
-            </Button>
-          </Link>
-          <Link to="/sign-in">
-            <Button variant="secondary" size="lg">
-              View tasks
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <LandingHero />
 
       <section className="border-t border-border bg-surface-elevated py-20">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 md:grid-cols-3">
